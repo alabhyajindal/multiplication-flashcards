@@ -1,0 +1,50 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: black;
+}
+
+.container {
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.flashcard {
+  max-width: 320px;
+  padding-bottom: 25px;
+  background-color: thistle;
+  color: black;
+
+  margin: 10px 1%;
+  border-radius: 15px;
+}
+
+.row {
+  display: flex;
+  justify-content: flex-end;
+}
+
+span#a,
+span#b {
+  font-size: 12rem;
+  line-height: 11rem;
+}
+
+span#x {
+  font-size: 5rem;
+  align-self: flex-end;
+}
+
+#divider {
+  background: palevioletred;
+  border-radius: 3px;
+
+  margin: 0 auto 5px;
+  height: 10px;
+  width: 90%;
+}
