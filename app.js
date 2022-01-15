@@ -48,7 +48,7 @@ function correctAnswer() {
   });
 }
 
-window.addEventListener("load", () => {
-  distract();
-  correctAnswer();
-});
+distract();
+correctAnswer();
+
+// window.addEventListener("load", () => {});
