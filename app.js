@@ -9,6 +9,7 @@ b.innerText = randomQ();
 let result = a.textContent * b.textContent;
 let max = result;
 let min = result - 10;
+let resultLoc = 0;
 
 const options = document.querySelectorAll("#option");
 const optionsArray = [];
@@ -40,14 +41,24 @@ function distract() {
 }
 
 function correctAnswer() {
-  let resultLoc = Math.floor(Math.random() * 3);
+  resultLoc = Math.floor(Math.random() * 3);
   optionsArray[resultLoc].innerText = result;
 
   optionsArray[resultLoc].addEventListener("click", () => {
     optionsArray[resultLoc].style.color = "palevioletred";
+    optionsArray[resultLoc].style.opacity = "100";
+
+    console.log(resultLoc);
+
     setTimeout("location.reload()", 300);
   });
 }
+
+optionsArray.forEach((item) => {
+  item.addEventListener("click", () => {
+    item.style.opacity = "0";
+  });
+});
 
 distract();
 correctAnswer();
