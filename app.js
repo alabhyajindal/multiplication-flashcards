@@ -44,7 +44,8 @@ function correctAnswer() {
   optionsArray[resultLoc].innerText = result;
 
   optionsArray[resultLoc].addEventListener("click", () => {
-    optionsArray[resultLoc].style.color = "green";
+    optionsArray[resultLoc].style.color = "palevioletred";
+    setTimeout("location.reload()", 300);
   });
 }
 

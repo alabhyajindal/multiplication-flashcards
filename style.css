@@ -12,6 +12,7 @@ body {
 .container {
   max-width: 320px;
   margin: 0 auto;
+  padding-top: 20px;
 }
 
 .flashcard {
@@ -55,7 +56,8 @@ span#x {
   margin: 0 auto;
   text-align: center;
 
-  padding-bottom: 5px;
+  padding-bottom: 10px;
+  font-size: larger;
 }
 
 .answers {
